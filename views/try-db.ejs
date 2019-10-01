@@ -1,0 +1,27 @@
+<%- include('parts/html_header') %>
+<%- include('parts/navbar') %>
+<div class="container">
+
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Birthday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(let r of rows) {%>
+              <tr>
+                <td><%= r.sid%></td>
+                <td><%= r.name%></td>
+                <td><%= r.birthday2%></td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+    </div>
+
+</div>
+<%- include('parts/html_foot') %>
